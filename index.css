@@ -1,0 +1,30 @@
+table{
+    border-radius: 2px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+td {
+    position: relative;
+}
+tr:nth-child(2n) {
+    background: rgba(232, 248, 255, 0.79);
+}
+
+tr:hover {
+    background: #D0D0D0;
+}
+td:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #D0D0D0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+button {
+    display: none;
+}
+form:valid button {
+    display: inline;
+}
