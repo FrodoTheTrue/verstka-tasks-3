@@ -11,12 +11,12 @@ tr:nth-child(2n) {
 }
 
 tr:hover {
-    background: #D0D0D0;
+    background: #d0d0d0;
 }
 td:hover::before {
     content: '';
     position: absolute;
-    background-color: #D0D0D0;
+    background-color: #d0d0d0;
     top: -5000px;
     height: 10000px;
     width: 100%;

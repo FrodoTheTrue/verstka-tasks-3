@@ -187,8 +187,8 @@
         </table>
         <br>
         <form>
-            <input id="email" name="email" type="email" placeholder="email" required>
-            <input id="phone" name="phone" type="tel" placeholder="phone" pattern="^(\+7|8)\d{10}$" required>
+            <input id="email" name="email" type="email" placeholder="email" pattern="\w+@[A-Za-z0-9_.]+\.\w+" required>
+            <input id="phone" maxlength="11" name="phone" type="tel" placeholder="phone" pattern="^(\+7|8)\d{10}$" required>
             <button type="submit">Отправить</button>
         </form>
         <!-- Здесь применять вашу самую сильную магию -->
