@@ -6,6 +6,18 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <input id="city"
+            type="text"
+            placeholder="Аэропорт назначения"
+            value=""
+            onkeyup="this.setAttribute('value', this.value)">
+            <br>
+            <input id="all" type="radio" name="fly" value="all" checked>Все
+            <br>
+            <input id="inp_come" type="radio" name="fly" value="come_fly">Прилет
+            <br>
+            <input id="inp_out" type="radio" name="fly" value="out_fly">Вылет
+            <br>
         <table>
             <tr>
                 <td>Тип рейса</td>
@@ -18,7 +30,7 @@
                 <td>Номер терминала</td>
                 <td>Cтатус рейса</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="out">
                 <td>Вылет</td>
                 <td>1437</td>
                 <td>Аэрофлот</td>
@@ -29,7 +41,7 @@
                 <td>F</td>
                 <td>Вылетел</td>
             </tr>
-            <tr>
+            <tr name="Трансаэро" value="out">
                 <td>Вылет</td>
                 <td>3756</td>
                 <td>Трансаэро</td>
@@ -40,7 +52,7 @@
                 <td>A</td>
                 <td>Вылетел</td>
             </tr>
-            <tr>
+            <tr name="Уральские авиалинии" value="come">
                 <td>Прилет</td>
                 <td>1488</td>
                 <td>Уральские авиалинии</td>
@@ -51,7 +63,7 @@
                 <td>F</td>
                 <td>По расписанию</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="out">
                 <td>Вылет</td>
                 <td>1337</td>
                 <td>Аэрофлот</td>
@@ -62,7 +74,7 @@
                 <td>C</td>
                 <td>Задерживаеться до 11:00</td>
             </tr>
-            <tr>
+            <tr name="Трансаэро" value="come">
                 <td>Прилет</td>
                 <td>5111</td>
                 <td>Трансаэро</td>
@@ -73,7 +85,7 @@
                 <td>D</td>
                 <td>Приземлился</td>
             </tr>
-            <tr>
+            <tr name="Уральские авиалинии" value="out">
                 <td>Вылет</td>
                 <td>4901</td>
                 <td>Уральские авиалинии</td>
@@ -84,7 +96,7 @@
                 <td>E</td>
                 <td>Отменен</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="out">
                 <td>Вылет</td>
                 <td>1717</td>
                 <td>Аэрофлот</td>
@@ -95,7 +107,7 @@
                 <td>D</td>
                 <td>Отменен</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="come">
                 <td>Прилет</td>
                 <td>1647</td>
                 <td>Аэрофлот</td>
@@ -106,7 +118,7 @@
                 <td>C</td>
                 <td>Отменен</td>
             </tr>
-            <tr>
+            <tr name="Уральские авиалинии" value="come">
                 <td>Прилет</td>
                 <td>4378</td>
                 <td>Уральские авиалинии</td>
@@ -117,7 +129,7 @@
                 <td>F</td>
                 <td>Отменен</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="come">
                 <td>Прилет</td>
                 <td>1234</td>
                 <td>Аэрофлот</td>
@@ -128,7 +140,7 @@
                 <td>A</td>
                 <td>По расписанию</td>
             </tr>
-            <tr>
+            <tr name="Трансаэро" value="out">
                 <td>Вылет</td>
                 <td>9842</td>
                 <td>Трансаэро</td>
@@ -139,7 +151,7 @@
                 <td>V</td>
                 <td>Вылетел</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="come">
                 <td>Прилет</td>
                 <td>1892</td>
                 <td>Аэрофлот</td>
@@ -150,7 +162,7 @@
                 <td>C</td>
                 <td>По расписанию</td>
             </tr>
-            <tr>
+            <tr name="Уральские авиалинии" value="out">
                 <td>Вылет</td>
                 <td>5050</td>
                 <td>Уральские авиалинии</td>
@@ -161,7 +173,7 @@
                 <td>E</td>
                 <td>Отменен</td>
             </tr>
-            <tr>
+            <tr name="Аэрофлот" value="out">
                 <td>Вылет</td>
                 <td>8750</td>
                 <td>Аэрофлот</td>
@@ -172,11 +184,11 @@
                 <td>H</td>
                 <td>Вылетел</td>
             </tr>
-            <tr>
+            <tr name="Трансаэро" value="come">
                 <td>Прилет</td>
                 <td>5491</td>
                 <td>Трансаэро</td>
-                <td><img alt="Аэрофлот" src="https://goo.gl/yA6cG1"></td>
+                <td><img alt="Трансаэро" src="https://goo.gl/yA6cG1"></td>
                 <td>B-118</td>
                 <td>Шереметьево</td>
                 <td>22.10 11:57</td>

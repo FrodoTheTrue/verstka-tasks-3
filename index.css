@@ -28,3 +28,16 @@ button {
 form:valid button {
     display: inline;
 }
+td {
+    position: relative;
+}
+#inp_come[value="come_fly"]:checked ~ table tr[value="out"],
+#inp_out[value="out_fly"]:checked ~ table tr[value="come"],
+#city[value="Аэрофлот"] ~ table tr[name="Трансаэро"],
+#city[value="Аэрофлот"] ~ table tr[name="Уральские авиалинии"],
+#city[value="Трансаэро"] ~ table tr[name="Аэрофлот"],
+#city[value="Трансаэро"] ~ table tr[name="Уральские авиалинии"],
+#city[value="Уральские авиалинии"] ~ table tr[name="Аэрофлот"],
+#city[value="Уральские авиалинии"] ~ table tr[name="Трансаэро"] {
+    display: none;
+}
