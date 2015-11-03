@@ -8,15 +8,15 @@
     <body>
         <input id="city"
             type="text"
-            placeholder="Аэропорт назначения"
+            placeholder="Авиакомпания"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
             <br>
-            <input id="all" type="radio" name="fly" value="all" checked>Все
+            <input id="all" type="radio" name="fly" value="all" checked><label for="all">Все</label>
             <br>
-            <input id="inp_come" type="radio" name="fly" value="come_fly">Прилет
+            <input id="inp_come" type="radio" name="fly" value="come_fly">Прилет<label for="inp_come">Все</label>
             <br>
-            <input id="inp_out" type="radio" name="fly" value="out_fly">Вылет
+            <input id="inp_out" type="radio" name="fly" value="out_fly">Вылет<label for="inp_out">Все</label>
             <br>
         <table>
             <tr>
@@ -200,7 +200,7 @@
         <br>
         <form>
             <input type="email" placeholder="email" pattern="\w+@[A-Za-z0-9_.]+\.\w+" required>
-            <input maxlength="11" type="tel" placeholder="phone" pattern="^(\+7|8)\d{10}$" required>
+            <input maxlength="12" type="tel" placeholder="phone" pattern="^(\+7|8)\d{10,11}$" required>
             <button type="submit">Отправить</button>
         </form>
         <!-- Здесь применять вашу самую сильную магию -->
